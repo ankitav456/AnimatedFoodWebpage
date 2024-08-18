@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Dancing+Script:wght@700&family=Domine:wght@500&family=Dosis&family=Fira+Code:wght@300..700&family=Inconsolata:wght@300&family=Josefin+Sans:wght@200&family=Kalam:wght@300;400;700&family=Kalnia&family=Montserrat:wght@500&family=Noto+Serif&family=Oleo+Script&family=Pacifico&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk&family=Xanh+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display";
+}
+
+header {
+  background-color: #faf7f5;
+}
+.header-container {
+  width: 1120px;
+  margin: 0 auto;
+  /* position: sticky;
+  top: 0; */
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fea150;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  cursor: pointer;
+  color: #333;
+}
+
+header .login-icon {
+  font-size: 24px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7fff7;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #fea150;
+}
+
+.hero-text p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.hero-text button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fea150;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* .food-orange-circle{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #fea150;
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+.food-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #fea150;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-images {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.food-images img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.food-images img:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.food-images img:nth-child(2) {
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.food-images img:nth-child(3) {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.food-images img:nth-child(4) {
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+.food-images img:nth-child(5) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 20px;
+  font-size: 32px;
+  color: #fea150;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
